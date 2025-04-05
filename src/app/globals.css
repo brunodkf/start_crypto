@@ -2,25 +2,60 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground: #01080e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #01080e;
     --foreground: #ededed;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --color-amarelo: #FFA000;
+  --color-verde: #0F725C;
+  --color-branco: #EDEDED;
+  --color-preto: #1e1e1e;
+  --color-azul: #041832;
+}
+
+@theme inline {
+  --font-exo2: var(--font-exo-2-sans);
+  --font-montserrat: var(--font-montserrat-sans);
+}
+
+@layer utilities {
+  .bg-global {
+    background: #041832;
+    background: linear-gradient(180deg, rgba(4, 24, 50, 1) 0%, #01080e 100%);
+  }
+
+  .glass {
+    background: rgba(206, 206, 206, 0.15);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    border: 1px solid rgba(231, 231, 231, 0.068);
+  }
+}
+
+.cardCoin::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff11;
+  position: absolute;
+  bottom: -8px;
+}
+
+.benefits__list--item::before{
+  content: '';
+  width: 2px;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  display: block;
+  top: 0;
+  background-color: #0F725C;
 }
