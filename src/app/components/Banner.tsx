@@ -1,10 +1,7 @@
 "use client"
 
 import React from 'react'
-import { Navbar } from './Navbar'
-import ParticlesBackground from "@/app/components/ParticlesBackground";
 import Image from 'next/image';
-import CoinList from './CoinList';
 
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
