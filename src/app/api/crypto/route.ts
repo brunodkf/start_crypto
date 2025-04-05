@@ -18,7 +18,8 @@ export async function GET() {
       status: 200,
     });
   } catch (error) {
-    return new Response("Erro ao buscar dados das criptomoedas", {
+
+    return new Response( error + "Erro ao buscar dados das criptomoedas", {
       status: 500,
     });
   }
