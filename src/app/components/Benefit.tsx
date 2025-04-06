@@ -11,7 +11,7 @@ const Benefit = () => {
     ]
 
     return (
-        <section className='benefits w-full mt-30 relative flex'>
+        <section className='benefits w-full mt-30 relative flex' id='benefit'>
 
             <Image src='/waves2.png' alt="Logo Image" className=" absolute w-full h-full -z-0 " width={1500} height={500} />
 
@@ -34,6 +34,9 @@ const Benefit = () => {
                 </div>
 
                 <Image src='/bitcoinGold.webp' alt="Logo Image" className="w-1/3 -z-0 opacity-80 " width={1500} height={500} />
+
+
+                
             </div>
         </section>
     )

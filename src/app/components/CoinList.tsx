@@ -19,7 +19,7 @@ const CoinList = () => {
     };
 
     return (
-        <div className="">
+        <section className="" id='coins'>
             <div className="container flex justify-between flex-wrap m-auto gap-6">
                 {
                     cryptos.map((item, index) => (
@@ -48,7 +48,7 @@ const CoinList = () => {
                     ))
                 }
             </div>
-        </div>
+        </section>
 
     )
 }
