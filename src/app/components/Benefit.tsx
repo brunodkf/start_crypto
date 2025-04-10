@@ -16,7 +16,7 @@ const Benefit = () => {
     return (
         <section className='benefits w-full mt-30 relative flex' id='benefit'>
 
-            <Image src='/waves2.png' alt="Logo Image" className=" absolute w-full h-full -z-0 " width={1500} height={500} />
+            <Image src='/waves2.webp' alt="Logo Image" className=" absolute w-full h-full -z-0 " width={1500} height={500} />
 
             <div className="container m-auto flex flex-col lg:flex-row items-center justify-around flex-wrap">
                 <div className="w-7/8 lg:w-1/2">

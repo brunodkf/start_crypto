@@ -15,7 +15,7 @@ export const Banner = () => {
     return (
         <section className='banner relative w-full h-svh flex flex-col ' id='home'>
 
-            <Image src='/group1.png' alt="Logo Image" className="absolute w-full h-full -z-0 " width={1500} height={500} />
+            <Image src='/group1.webp' alt="Logo Image" className="absolute w-full h-full -z-0 " width={1500} height={500} />
 
             <div className="container relative m-auto flex items-center justify-between z-0 p-2">
               

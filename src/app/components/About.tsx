@@ -8,8 +8,8 @@ const About = () => {
         <section className='about w-full lg:h-svh lg:max-h-[636px]' id='about'>
             <div className="container m-auto w-full h-full flex flex-col-reverse justify-around lg:flex-row items-center gap-20 md:gap-3 ">
                 <div className="relative w-3/4 lg:w-1/2 flex items-center justify-center">
-                    <Image src='/esfera.png' alt="Logo Image" className="opacity-30 absolute -z-0" width={500} height={500} />
-                    <Image src='/rage.png' alt="Logo Image" className="z-10" width={500} height={500} />
+                    <Image src='/esfera.webp' alt="Logo Image" className="opacity-30 absolute -z-0" width={500} height={500} />
+                    <Image src='/rage.webp' alt="Logo Image" className="z-10" width={500} height={500} />
                 </div>
                 <div className="lg:w-1/2 text-center lg:text-start flex flex-col gap-4">
                     <h2 className='font-exo2 text-3xl mb-3'>Sobre o Curso</h2>
