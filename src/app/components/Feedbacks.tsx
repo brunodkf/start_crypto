@@ -24,15 +24,18 @@ const testimonials = [
 const Feedbacks = () => {
   return (
     <section className='w-full h-auto relative mt-20 py-20' id='feedbacks'>
+
       <ParticlesBackground />
+
       <div className="container text-center m-auto ">
 
         <h2 className='font-exo2 text-3xl'>O que nossos alunos dizem</h2>
 
         <Carrousel depoimentos={testimonials} />
 
-
       </div>
+
+      
     </section>
   )
 }

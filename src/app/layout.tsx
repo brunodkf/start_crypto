@@ -4,6 +4,7 @@ import "./globals.css";
 import { CryptoProvider } from "./context/CriptoContext";
 
 
+
 const montserrat = Montserrat({
   variable: "--font-montserrat-sans",
   subsets: ["latin"],
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${exo2.variable} ${montserrat.variable} antialiased text-branco`}
+        className={`${exo2.variable} ${montserrat.variable} antialiased text-branco `}
       >
         <CryptoProvider>
           {children}

@@ -40,10 +40,10 @@ export function Carrousel({ depoimentos }: DepoimentosProps) {
             spaceBetween={10}
             loop={true}
             pagination={{ clickable: true }}
-            // autoplay={{
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
 
             modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
             className="testimonials w-full h-full mt-15 pt-12">

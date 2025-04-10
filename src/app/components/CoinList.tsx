@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useCrypto } from '../context/CriptoContext';
-
+import { motion } from 'framer-motion';
 import { IoMdTrendingDown } from "react-icons/io";
 import { IoMdTrendingUp } from "react-icons/io";
 import Image from 'next/image';
@@ -20,11 +20,17 @@ const CoinList = () => {
 
     return (
         <section className="" id='coins'>
-            <div className="container flex justify-between flex-wrap m-auto gap-6">
+            <div className="container flex justify-between flex-col lg:flex-row m-auto gap-6">
                 {
                     cryptos.map((item, index) => (
-                        <div key={index} className=' w-full lg:max-w-[300px] flex flex-col items-center p-2 rounded-xl glass'>
-
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            viewport={{ once: false, margin: "-100px" }}
+                            key={index}
+                            className='lg:w-full lg:max-w-[300px] flex flex-col items-center p-2 mx-2 lg:mx-0 rounded-xl glass'
+                        >
                             <div className=" w-full flex items-center justify-between cardCoin relative">
                                 <div className="flex items-center">
                                     <Image src={item.image} alt="Logo Image" className="max-w-[42px] h-fit" width={500} height={500} />
@@ -44,7 +50,7 @@ const CoinList = () => {
                                     item.price_change_percentage_24h >= 0 ? <IoMdTrendingUp className='text-green-400 text-4xl' /> : <IoMdTrendingDown className='text-red-600 text-4xl' />
                                 }
                             </div>
-                        </div>
+                        </motion.div>
                     ))
                 }
             </div>
