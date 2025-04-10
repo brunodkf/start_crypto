@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${exo2.variable} ${montserrat.variable} antialiased text-branco `}
+        className={`${exo2.variable} ${montserrat.variable} antialiased text-branco overflow-x-clip`}
       >
         <CryptoProvider>
           {children}

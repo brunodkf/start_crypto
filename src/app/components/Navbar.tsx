@@ -43,7 +43,7 @@ export const Navbar = () => {
     console.log(isOpen)
 
     return (
-        <nav className='w-full p-4 fixed lg:absolute z-50'>
+        <nav className='w-full p-4 absolute z-50'>
             <div className="container flex items-center justify-between m-auto">
 
                 <div className="flex items-center z-10">
@@ -80,7 +80,7 @@ export const Navbar = () => {
                                 transition={{ delay: index * 0.1, duration: 0.4 }}
                                 className="relative group"
                             >
-                                <Link href={item.link} aria-label={`Ir para ${item.name}`}
+                                <Link href={item.link} aria-label={`Ir para ${item.name}`} className='uppercase'
                                     onClick={(e) => {
                                         scrollToSection(e, `${item.link}`);
                                         setIsOpen(false)
@@ -90,6 +90,8 @@ export const Navbar = () => {
 
                             </motion.li>
                         ))}
+
+                        <Link href={"#"} onClick={(e) => scrollToSection(e, `cta`)} className='bg-verde p-4 px-20 mt-6 rounded text-branco hover:bg-green-800'> Inscreva-se Já!</Link>
                     </ul>
                 </motion.div>
             </div>

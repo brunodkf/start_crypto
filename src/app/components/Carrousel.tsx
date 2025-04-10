@@ -16,14 +16,10 @@ interface Depoimento {
 }
 
 type DepoimentosProps = {
-    depoimentos: Depoimento[]
-}
-
+    depoimentos: Depoimento[];
+};
 
 export function Carrousel({ depoimentos }: DepoimentosProps) {
-
-    console.log(depoimentos);
-
     return (
         <Swiper
             effect={'coverflow'}
@@ -36,39 +32,49 @@ export function Carrousel({ depoimentos }: DepoimentosProps) {
             }}
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={3}
-            spaceBetween={10}
             loop={true}
             pagination={{ clickable: true }}
             autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
             }}
-
+            breakpoints={{
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }}
             modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
-            className="testimonials w-full h-full mt-15 pt-12">
-
-            {/* glass */}
-            {
-                depoimentos ? depoimentos.map((item, index) => (
-                    <SwiperSlide key={index} className="w-full h-60 mb-4 p-4 flex flex-col items-center justify-center text-white rounded-xl shadow-lg">
-
-                        <FaQuoteRight className="absolute -z-10 text-9xl right-2 opacity-10" />
-
-                        <div className="text-start">
-                            <h3 className="text-2xl font-exo2 font-semibold tracking-wide mb-2">
-                                {item.name}
-                            </h3>
-                            <blockquote>
-                                {item.text}
-                            </blockquote>
-                        </div>
-                    </SwiperSlide>
-                )) : null
-            }
-
+            className="testimonials w-full h-full mt-15 pt-12"
+        >
+            {depoimentos.map((item, index) => (
+                <SwiperSlide
+                    key={index}
+                    className="w-full h-60 mb-4 p-4 flex flex-col items-center justify-center text-white rounded-xl shadow-lg relative"
+                >
+                    <FaQuoteRight className="absolute -z-10 text-9xl right-2 opacity-10" />
+                    <div className="text-start">
+                        <h3 className="text-2xl font-exo2 font-semibold tracking-wide mb-2">
+                            {item.name}
+                        </h3>
+                        <blockquote>{item.text}</blockquote>
+                    </div>
+                </SwiperSlide>
+            ))}
         </Swiper>
-    )
+    );
 }
 
-export default Carrousel
+export default Carrousel;

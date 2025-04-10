@@ -18,14 +18,14 @@ const Benefit = () => {
 
             <Image src='/waves2.png' alt="Logo Image" className=" absolute w-full h-full -z-0 " width={1500} height={500} />
 
-            <div className="container m-auto flex items-center justify-around flex-wrap">
-                <div className="w-1/2">
+            <div className="container m-auto flex flex-col lg:flex-row items-center justify-around flex-wrap">
+                <div className="w-7/8 lg:w-1/2">
+
                     <h2 className='font-exo2 text-3xl'>
                         Por que aprender com a gente ?
                     </h2>
 
-
-                    <ul className='benefits__list'>
+                    <ul className='benefits__list overflow-clip'>
                         {
                             benefitList.map((item, index) => (
                                 <motion.li
@@ -49,13 +49,11 @@ const Benefit = () => {
                     viewport={{ once: false, margin: "-100px" }}
                     
 
-                    className="w-1/3 -z-0 opacity-80 ">
+                    className="mt-4 sm:w-1/2 lg:mt-0 lg:w-1/3 -z-0 opacity-80 ">
 
                     <Image src='/bitcoinGold.webp' alt="Logo Image" width={1500} height={500} />
 
                 </motion.div>
-
-
 
             </div>
         </section>
