@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const About = () => {
     return (
-        <section className='about w-full h-svh lg:max-h-[636px]' id='about'>
-            <div className="container m-auto w-full h-full flex flex-col-reverse justify-around lg:flex-row items-center">
+        <section className='about w-full lg:h-svh lg:max-h-[636px]' id='about'>
+            <div className="container m-auto w-full h-full flex flex-col-reverse justify-around lg:flex-row items-center gap-20 md:gap-3 ">
                 <div className="relative w-3/4 lg:w-1/2 flex items-center justify-center">
                     <Image src='/esfera.png' alt="Logo Image" className="opacity-30 absolute -z-0" width={500} height={500} />
                     <Image src='/rage.png' alt="Logo Image" className="z-10" width={500} height={500} />
