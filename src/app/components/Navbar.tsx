@@ -91,7 +91,10 @@ export const Navbar = () => {
                             </motion.li>
                         ))}
 
-                        <Link href={"#"} onClick={(e) => scrollToSection(e, `cta`)} className='bg-verde p-4 px-20 mt-6 rounded text-branco hover:bg-green-800'> Inscreva-se Já!</Link>
+                        <Link href={"#"} onClick={(e) => {
+                            scrollToSection(e, `cta`);
+                            setIsOpen(false)
+                        }} className='bg-verde p-4 px-20 mt-6 rounded text-branco hover:bg-green-800'> Inscreva-se Já!</Link>
                     </ul>
                 </motion.div>
             </div>
