@@ -2,7 +2,7 @@
 
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim"; // Versão otimizada
+import { loadSlim } from "tsparticles-slim"; 
 import type { Engine } from "tsparticles-engine";
 
 export default function ParticlesNetwork() {
@@ -16,8 +16,8 @@ export default function ParticlesNetwork() {
       init={particlesInit}
       className="-z-10 opacity-15"
       options={{
-        fullScreen: { enable: false }, // Impede que ocupe a tela inteira
-        background: { color: "transparent" }, // Garante fundo transparente
+        fullScreen: { enable: false }, 
+        background: { color: "transparent" }, 
         particles: {
           number: { value: 100, density: { enable: true, area: 800 } },
           color: { value: "#ededed" },

@@ -44,14 +44,13 @@ export function CryptoProvider({ children }: { children: React.ReactNode }) {
 
         getCoins();
 
-        const interval = setInterval(getCoins, 60000); // Atualiza a cada 1min
+        const interval = setInterval(getCoins, 60000); 
         return () => clearInterval(interval);
     }, []);
 
     return <CryptoContext.Provider value={{ cryptos, isLoading }}>{children}</CryptoContext.Provider>;
 }
 
-// Hook personalizado para consumir o contexto
 export function useCrypto() {
     const context = useContext(CryptoContext);
     if (!context) {
