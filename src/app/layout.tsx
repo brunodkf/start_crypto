@@ -28,6 +28,9 @@ export const metadata: Metadata = {
     'criptomoedas curso',
     'StartCrypto',
   ],
+  icons: {
+    icon: "/logo.webp",
+  },
   authors: [{ name: 'Bruno Furtado', url: 'https://brunodkf.netlify.app' }],
   creator: 'Bruno Furtado',
   openGraph: {
