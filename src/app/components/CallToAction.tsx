@@ -10,7 +10,7 @@ const CallToAction = () => {
                 <h2 className='font-exo2 text-3xl'>Dê o Primeiro Passo Rumo à Liberdade Financeira !</h2>
                 <p className='m-auto py-8'>Aprenda a investir com segurança e confiança no mercado de criptomoedas – mesmo começando do zero.</p>
 
-                <Link href={"https://sun.eduzz.com/R9JJE8G89X"} className='bg-verde p-3 px-8 rounded text-branco hover:bg-green-800'>
+                <Link href={"https://pay.kiwify.com.br/VcRA5uz"} className='bg-verde p-3 px-8 rounded text-branco hover:bg-green-800'>
                     Comece Agora – Inscreva-se Já!
                 </Link>
             </div>
