@@ -55,7 +55,7 @@ export const Navbar = () => {
                 <ul className='hidden lg:flex items-center gap-6 text-sm tracking-wide font-semibold'>
                     {
                         menuItems.map((item, index) => (
-                            <li key={index} >
+                            <li key={index} className='hover:text-verde transition-colors'>
                                 <Link href={item.link} onClick={(e) => scrollToSection(e, `${item.link}`)}>{item.name}</Link>
                             </li>
                         ))
