@@ -8,7 +8,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/autoplay";
 import 'swiper/css/pagination';
 
-import { FaQuoteRight } from "react-icons/fa6";
 import { MdOutlineFormatQuote } from "react-icons/md";
 
 interface Depoimento {
@@ -24,22 +23,14 @@ type DepoimentosProps = {
 export function Carrousel({ depoimentos }: DepoimentosProps) {
     return (
         <Swiper
-            // effect={'coverflow'}
-            // coverflowEffect={{
-            //     rotate: 50,
-            //     stretch: 0,
-            //     depth: 100,
-            //     modifier: 1,
-            //     slideShadows: true,
-            // }}
             grabCursor={true}
             centeredSlides={true}
             loop={true}
             pagination={{ clickable: true }}
-            // autoplay={{
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            // }}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
             breakpoints={{
                 0: {
                     slidesPerView: 1,
@@ -71,7 +62,7 @@ export function Carrousel({ depoimentos }: DepoimentosProps) {
 
                     <p>⭐⭐⭐⭐⭐</p>
 
-                    <blockquote className='text-base py-4'>" {item.text} "</blockquote>
+                    <p className='text-base py-4'>{ ` " ${item.text } " ` } </p>
 
                     <div className=' flex items-center gap-4'>
                         <div className="bg-amarelo p-2 px-3 rounded-4xl">
