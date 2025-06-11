@@ -28,7 +28,7 @@ export default function BackToTop() {
       className={`topo__button hidden ${isVisible ? 'lg:block' : ''} fixed bottom-10 right-10 cursor-pointer`}
       aria-label="Voltar ao topo"
     >
-      <FaRegCircleUp className='text-verde text-4xl' />
+      <FaRegCircleUp className='text-green-500 text-4xl' />
     </button>
   );
 }

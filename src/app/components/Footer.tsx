@@ -19,7 +19,7 @@ const Footer = () => {
         <br />
         <br />
 
-        Desenvolvido por <a href='https://brunodkf.netlify.app/' target='_black' className="text-verde font-medium">Bruno Furtado</a>
+        Desenvolvido por <a href='https://brunodkf.netlify.app/' target='_black' className="text-yellow-300 font-medium">Bruno Furtado</a>
       </div>
     </footer>
   )

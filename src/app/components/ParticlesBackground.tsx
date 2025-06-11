@@ -14,7 +14,7 @@ export default function ParticlesNetwork() {
     <Particles
       id="tsparticles"
       init={particlesInit}
-      className="-z-10 opacity-15"
+      className="-z-10 opacity-25"
       options={{
         fullScreen: { enable: false }, 
         background: { color: "transparent" }, 

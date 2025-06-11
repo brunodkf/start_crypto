@@ -61,7 +61,7 @@ export const Navbar = () => {
                         ))
                     }
 
-                    <Link href={"#"} onClick={(e) => scrollToSection(e, `cta`)} className='bg-verde p-2 rounded text-branco hover:bg-green-800'> Inscreva-se Já!</Link>
+                    <Link href={"#"} onClick={(e) => scrollToSection(e, `cta`)} className='bg-green-800 p-2 rounded text-branco text-[12px] uppercase font-semibold tracking-wider transition-all hover:bg-green-900'> Compre agora !</Link>
                 </ul>
 
                 <FiMenu className='lg:hidden text-verde text-4xl cursor-pointer z-50' aria-label="Open Menu" onClick={() => setIsOpen(!isOpen)} />
@@ -94,7 +94,7 @@ export const Navbar = () => {
                         <Link href={"#"} onClick={(e) => {
                             scrollToSection(e, `cta`);
                             setIsOpen(false)
-                        }} className='bg-verde p-4 px-20 mt-6 rounded text-branco hover:bg-green-800'> Inscreva-se Já!</Link>
+                        }} className='bg-verde p-4 px-20 mt-6 rounded text-branco hover:bg-green-800'> COMPRE AGORA</Link>
                     </ul>
                 </motion.div>
             </div>

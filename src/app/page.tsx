@@ -9,6 +9,7 @@ import About from "./components/About";
 import CallToAction from "./components/CallToAction";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import { Price } from "./components/Price";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <CoinList/>
       <Introduction />
       <Benefit/>
+      <Price/>
       <Feedbacks/>
       <About/>
       <CallToAction/>
