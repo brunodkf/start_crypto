@@ -55,7 +55,7 @@ const Benefit = () => {
                     viewport={{ once: false, margin: "-100px" }}
                     className="mt-4 sm:w-1/2 lg:mt-0 lg:w-1/3 -z-0 opacity-80 ">
 
-                    <Image src='/testet.png' alt="Logo Image" width={1500} height={500} />
+                    <Image src='/benefitHero.webp' alt="Logo Image" width={1500} height={500} />
                     {/* <Image src='/bitcoinGold.webp' alt="Logo Image" width={1500} height={500} /> */}
                 </motion.div>
 
