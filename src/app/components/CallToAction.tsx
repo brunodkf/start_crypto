@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-import { FaQuoteRight } from 'react-icons/fa';
 import { FiTarget } from "react-icons/fi";
 import { PiMedalLight } from "react-icons/pi";
 
