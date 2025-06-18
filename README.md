@@ -2,7 +2,8 @@
 
 Landing Page moderna e responsiva para promover um curso introdutório ao universo das criptomoedas.
 
-![image](https://github.com/user-attachments/assets/db64bf54-4a0a-4c01-b3fb-7bdc4f39200c)
+![Captura de tela 2025-06-16 131959](https://github.com/user-attachments/assets/e2646b99-1dc3-4260-aab8-0dfba2ab4896)
+
 
 
 ## 📚 Sobre o Projeto
