@@ -40,14 +40,12 @@ export const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    console.log(isOpen)
-
     return (
         <nav className='w-full p-4 absolute z-50'>
             <div className="container flex items-center justify-between m-auto">
 
                 <div className="flex items-center z-10">
-                    <Image src='/logo.webp' alt="Logo Image" className="max-w-16 brightness-0 dark:filter-none" width={100} height={50} />
+                    <Image  src='/logo.webp' alt="Logo Image" className="logo max-w-16 brightness-0 dark:filter-none" width={100} height={50} />
                     <p className='text-branco font-exo2 font-bold text-2xl'>StartCrypto</p>
                 </div>
 
