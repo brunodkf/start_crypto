@@ -116,7 +116,7 @@ export default function CryptoVSLLanding() {
                   </div>
                   <div>
                     <p className="text-slate-200 mb-3 italic">
-                      "Em uma semana já recuperei meu investimento. O método é realmente eficaz!"
+                       `&quot;` Em uma semana já recuperei meu investimento. O método é realmente eficaz!  `&quot;`
                     </p>
                     <p className="text-sm font-semibold text-white">João Silva, RJ</p>
                     <div className="flex text-yellow-400 mt-1">{"★".repeat(5)}</div>
@@ -133,7 +133,7 @@ export default function CryptoVSLLanding() {
                   </div>
                   <div>
                     <p className="text-slate-200 mb-3 italic">
-                      "Nunca imaginei que fosse tão simples começar! Recomendo para todos."
+                       `&quot;`Nunca imaginei que fosse tão simples começar! Recomendo para todos. `&quot;`
                     </p>
                     <p className="text-sm font-semibold text-white">Carla Santos, SP</p>
                     <div className="flex text-yellow-400 mt-1">{"★".repeat(5)}</div>
