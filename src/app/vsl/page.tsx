@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+import Link from "next/link";
 import { FaCheckCircle, FaClock, FaUserSecret } from "react-icons/fa";
 import { FaShield } from "react-icons/fa6";
 import { FiZap } from "react-icons/fi";
@@ -32,7 +34,7 @@ export default function CryptoVSLLanding() {
               className="w-full h-full object-cover"
               controls
               autoPlay
-              muted
+              // muted
               playsInline
               poster="/placeholder.svg?height=400&width=800"
             >
@@ -49,12 +51,15 @@ export default function CryptoVSLLanding() {
 
         {/* Main CTA */}
         <div className="text-center mb-12">
-          <Button
-            size="lg"
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-6 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          {/* <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-6 text-md md:text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
           >
             🚀 Quero Garantir Minha Vaga com Desconto
-          </Button>
+          </Button> */}
+
+          <Link href={"https://pay.kiwify.com.br/VcRA5uz"}
+            className="w-full block bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-2 text-md md:text-xl font-bold rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
+            🚀 Quero Garantir Minha Vaga com Desconto
+          </Link>
 
           <p className="text-sm text-slate-400 mt-3">⚡ Acesso imediato após a compra</p>
         </div>
@@ -111,12 +116,12 @@ export default function CryptoVSLLanding() {
             <Card className="border-0 shadow-lg bg-white/5 backdrop-blur-sm border border-white/10">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                    J
+                  <div className="w-12 h-12 bg-gradient-to-br overflow-clip from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <Image src='/b-7.jpg' alt="Logo Image" className="logo max-w-16 brightness-0 dark:filter-none" width={100} height={50} />
                   </div>
                   <div>
                     <p className="text-slate-200 mb-3 italic">
-                       `&quot;` Em uma semana já recuperei meu investimento. O método é realmente eficaz!  `&quot;`
+                      &quot; Em uma semana já recuperei meu investimento. O método é realmente eficaz!  &quot;
                     </p>
                     <p className="text-sm font-semibold text-white">João Silva, RJ</p>
                     <div className="flex text-yellow-400 mt-1">{"★".repeat(5)}</div>
@@ -128,12 +133,12 @@ export default function CryptoVSLLanding() {
             <Card className="border-0 shadow-lg bg-white/5 backdrop-blur-sm border border-white/10">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                    C
+                  <div className="w-12 h-12 bg-gradient-to-br overflow-clip from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
+                    <Image src='/image9.jpg' alt="Logo Image" className="logo max-w-16 brightness-0 dark:filter-none" width={100} height={50} />
                   </div>
                   <div>
                     <p className="text-slate-200 mb-3 italic">
-                       `&quot;`Nunca imaginei que fosse tão simples começar! Recomendo para todos. `&quot;`
+                      &quot; Nunca imaginei que fosse tão simples começar! Recomendo para todos. &quot;
                     </p>
                     <p className="text-sm font-semibold text-white">Carla Santos, SP</p>
                     <div className="flex text-yellow-400 mt-1">{"★".repeat(5)}</div>
@@ -171,12 +176,10 @@ export default function CryptoVSLLanding() {
 
         {/* Final CTA */}
         <div className="text-center mb-12">
-          <Button
-            size="lg"
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-12 py-6 text-xl font-bold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-pulse"
-          >
-            💰 Quero Começar Agora
-          </Button>
+          <Link href={"https://pay.kiwify.com.br/VcRA5uz"}
+            className="w-full block bg-yellow-600 hover:bg-yellow-700 text-white p-6 md:p-2 uppercase text-md md:text-xl font-bold rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
+            🚀 Quero Começar Agora
+          </Link>
         </div>
 
         {/* Footer/Guarantee */}
@@ -194,6 +197,17 @@ export default function CryptoVSLLanding() {
             </p>
           </CardContent>
         </Card>
+
+
+        <div className="text-center m-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Gostou do que viu até aqui?</h2>
+          <p className="pb-4 mb-4">Na StartCrypto, você encontra muito mais conteúdo, dicas e ferramentas para dar seus primeiros passos com segurança no mundo das criptomoedas.
+           <br/><br/>  Clique abaixo e continue sua jornada direto pelo nosso site.</p>
+          <Link href={"http://startscrypto.com.br/"}
+            className="w-1/2 m-auto block bg-yellow-600 hover:bg-yellow-700 text-white p-6 md:p-2 uppercase text-md md:text-xl font-bold rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
+            Saiba mais
+          </Link>
+        </div>
       </div>
     </div>
   )
