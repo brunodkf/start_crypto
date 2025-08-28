@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaCheckCircle, FaClock, FaUserSecret } from "react-icons/fa";
 import { FaShield } from "react-icons/fa6";
 import { FiZap } from "react-icons/fi";
+import Countdown from "../components/Countdown";
 
 
 export default function CryptoVSLLanding() {
@@ -30,12 +31,12 @@ export default function CryptoVSLLanding() {
         <div className="relative mb-8">
           <div className="aspect-video bg-slate-900 rounded-2xl overflow-hidden shadow-2xl">
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover cursor-pointer"
               controls
               autoPlay
               // muted
               playsInline
-              poster="/placeholder.svg?height=400&width=800"
+              poster="/thumb.jpg"
             >
               <source src="/vsl.mp4" type="video/mp4" />
               Seu navegador não suporta vídeo.
@@ -157,21 +158,10 @@ export default function CryptoVSLLanding() {
           <p className="text-lg">Restam poucas vagas com desconto especial</p>
 
           {/* Countdown Timer Placeholder */}
-          <div className="flex justify-center gap-4 mt-4">
-            <div className="bg-white/20 px-3 py-2 rounded-lg">
-              <div className="text-2xl font-bold">12</div>
-              <div className="text-xs">HORAS</div>
-            </div>
-            <div className="bg-white/20 px-3 py-2 rounded-lg">
-              <div className="text-2xl font-bold">34</div>
-              <div className="text-xs">MIN</div>
-            </div>
-            <div className="bg-white/20 px-3 py-2 rounded-lg">
-              <div className="text-2xl font-bold">56</div>
-              <div className="text-xs">SEG</div>
-            </div>
-          </div>
+          <Countdown />
         </div>
+
+
 
         {/* Final CTA */}
         <div className="text-center mb-12">
@@ -201,7 +191,7 @@ export default function CryptoVSLLanding() {
         <div className="text-center m-12">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">Gostou do que viu até aqui?</h2>
           <p className="pb-4 mb-4">Na StartCrypto, você encontra muito mais conteúdo, dicas e ferramentas para dar seus primeiros passos com segurança no mundo das criptomoedas.
-           <br/><br/>  Clique abaixo e continue sua jornada direto pelo nosso site.</p>
+            <br /><br />  Clique abaixo e continue sua jornada direto pelo nosso site.</p>
           <Link href={"http://startscrypto.com.br/"}
             className="w-1/2 m-auto block bg-yellow-600 hover:bg-yellow-700 text-white p-6 md:p-2 uppercase text-md md:text-xl font-bold rounded-md shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
             Saiba mais
